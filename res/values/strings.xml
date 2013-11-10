@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Josep Borrell Barra</string>
+    <string name="action_settings">Ajustos</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_ajustos">Ajustos</string>
+    <string name="menu_nuevo">Nou</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="boto1">Introdueix</string>
+    <string name="text">No pots modificar res de moment</string>
+
+</resources>
