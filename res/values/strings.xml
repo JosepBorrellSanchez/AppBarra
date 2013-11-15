@@ -6,10 +6,14 @@
     <string name="menu_guardar">Guardar</string>
     <string name="menu_ajustos">Ajustos</string>
     <string name="menu_nuevo">Nou</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Primera</string>
+    <string name="title_section2">Segona</string>
+    <string name="title_section3">Fiestaa</string>
     <string name="boto1">Introdueix</string>
     <string name="text">No pots modificar res de moment</string>
+    <string name="Nomicognoms">Nom i cognoms</string>
+    <string name="Nomusuari">Nom de usuari</string>
+    <string name="Password">Password</string>
+    <string name="Cancela">Cancelar</string>
 
 </resources>

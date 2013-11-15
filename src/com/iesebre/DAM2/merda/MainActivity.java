@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -93,16 +94,32 @@ public class MainActivity extends FragmentActivity {
 			super(fm);
 		}
 
-		@Override
+		
+		
+		
 		public Fragment getItem(int position) {
 			// getItem is called to instantiate the fragment for the given page.
 			// Return a DummySectionFragment (defined as a static inner class
 			// below) with the page number as its lone argument.
 			Fragment fragment = new DummySectionFragment();
+			Fragment fragment2 = new DummySectionFragment2();
+			Fragment fragment3 = new DummySectionFragment3();
 			Bundle args = new Bundle();
 			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 1);
+			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 2);
+			args.putInt(DummySectionFragment.ARG_SECTION_NUMBER, position + 3);
 			fragment.setArguments(args);
-			return fragment;
+			fragment2.setArguments(args);
+			fragment3.setArguments(args);
+			switch (position) {
+			case 0:
+				return fragment;
+			case 1:
+				return fragment2;
+			case 2:
+				return fragment3;
+			}
+			return null;
 		}
 
 		@Override
@@ -152,5 +169,23 @@ public class MainActivity extends FragmentActivity {
 			return rootView;
 		}
 	}
+	 public static class DummySectionFragment2 extends Fragment { 
+		/** * The fragment argument representing the section number for this * fragment. */ 
+		 public static final String ARG_SECTION_NUMBER = "section_number"; 
+		 public DummySectionFragment2() { } 
+		 @Override 
+		 public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) 
+		 { View rootView2 = inflater.inflate(R.layout.settings, container, false);
+		 return rootView2; }
+		 }
+	 public static class DummySectionFragment3 extends Fragment 
+	 { /** * The fragment argument representing the section number for this * fragment. */
+		 public static final String ARG_SECTION_NUMBER = "section_number_3";
+		 public DummySectionFragment3() { } 
+		 @Override 
+		 public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+		 { View rootView3 = inflater.inflate(R.layout.nou, container, false);
+		 return rootView3; } 
+		 }
 
 }
